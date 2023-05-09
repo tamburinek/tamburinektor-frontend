@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/login" element={<LoginPage/>}/>
             <Route exact path="/register" element={<RegistrationPage/>}/>
 
-            <Route exact path="/dashboard" element={<DashboardPageStudent/>}/>
+            {localStorage.getItem("role") === "ROLE_STUDENT" && <Route exact path="/dashboard" element={<DashboardPageStudent/>}/>}
             {localStorage.getItem("role") === "ROLE_STUDENT" && <Route exact path="/test" element={<TestStudentPage/>}/>}
             {localStorage.getItem("role") === "ROLE_STUDENT" && <Route exact path="/lecture" element={<LectureStudentPage/>}/>}
 
