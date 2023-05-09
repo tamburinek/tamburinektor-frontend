@@ -1,0 +1,39 @@
+.main{
+  width: 90%;
+  min-height: 15%;
+  background-color: rgb(233, 128, 116, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+  border-radius: 20px;
+  color: #505050;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 8px #8E8D8A;
+}
+
+.plus, .play{
+  cursor: pointer;
+  height: 40%;
+  aspect-ratio: 1/1;
+}
+
+.play{
+  margin-right: 20%;
+}
+
+.text{
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.buttons{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

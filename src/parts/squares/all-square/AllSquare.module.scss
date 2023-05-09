@@ -1,0 +1,32 @@
+.square{
+  position: absolute;
+  width: 15vw;
+  height: 25vh;
+  left: 52vw;
+  top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8E8D8A;
+  border-radius: 40px;
+  border: 1px solid rgba(233, 128, 116, 0.2);
+  cursor: pointer;
+}
+
+.square:hover{
+  box-shadow: 0px 0px 30px 10px rgba(233, 128, 116, 0.5);
+}
+
+.square div{
+  font-family: 'Manrope', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5vw;
+  line-height: 4vw;
+  color: #E98074;
+  width: 70%;
+  text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

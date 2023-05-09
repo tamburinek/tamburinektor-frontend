@@ -1,0 +1,61 @@
+.itemList{
+  width: 88%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 2%;
+  border: 1px solid #E98074;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: rgba(233, 128, 116, 0.2);
+  border-radius: 20px;
+}
+
+.green, .red, .blue, .purple, .white, .brown{
+  height: 80%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.green{
+  background-color: #61C454;
+}
+
+.red{
+  background-color: #f50000;
+}
+
+.blue{
+  background-color: #0223ff;
+}
+
+.purple{
+  background-color: #ff02ea;
+}
+
+.white{
+  background-color: #fffeff;
+}
+
+.brown{
+  background-color: #7a5c5c;
+}
+
+.description{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+}
+
+.close{
+  height: 40%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+

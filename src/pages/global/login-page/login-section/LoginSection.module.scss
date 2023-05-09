@@ -1,0 +1,130 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8E8D8A;
+}
+
+.text{
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #E98074;
+}
+
+.link{
+  color: #8E8D8A;
+  font-size: 10px;
+  z-index: 100;
+}
+
+.link:hover{
+  color: #E98074;
+}
+
+.input{
+  background: #D8C3A5;
+  width: 50%;
+  height: 45px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #D8C3A5;
+  color: #505050;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px #8E8D8A;
+  opacity: 80%;
+  text-align-last:center;
+  text-align: center;
+}
+
+.input::placeholder{
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.input:focus{
+  border: 2px solid #8E8D8A;
+  outline: none;
+}
+
+.label{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.username{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.password{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.login {
+  align-items: center;
+  appearance: none;
+  background-color: #EAE7DC;
+  border-radius: 24px;
+  box-sizing: border-box;
+  color: #8E8D8A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  width: 120px;
+  z-index: 0;
+  border: 2px solid rgba(142, 141, 138, 0.5);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 2px rgb(142, 141, 138, 0.25);
+}
+
+.login:hover{
+  color: #E98074;
+  border: 2px solid #E98074;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  z-index: 100;
+  box-shadow: 0px 0px 10px 5px rgb(142, 141, 138, 0.5);
+}

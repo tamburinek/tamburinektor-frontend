@@ -1,0 +1,38 @@
+.itemList{
+  width: 85%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: 1px solid #E98074;
+  margin-top: 5px;
+  background: rgba(233, 128, 116, 0.2);
+  border-radius: 20px;
+}
+
+.description{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+}
+
+.pencil, .plus{
+  height: 50%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.images{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 12%;
+}
+
+.plus{
+  margin-left: 20px;
+}

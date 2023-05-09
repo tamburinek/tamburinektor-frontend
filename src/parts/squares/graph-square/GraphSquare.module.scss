@@ -1,0 +1,27 @@
+.square{
+  position: absolute;
+  width: 35vw;
+  height: 40vh;
+  left: 32vw;
+  bottom: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E85A4F;
+  border-radius: 40px;
+}
+
+.square:hover{
+  box-shadow: 0px 0px 30px 5px rgba(232, 90, 79, 0.25);
+}
+
+.square div{
+  font-family: 'Manrope', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1vw;
+  line-height: 4vw;
+  color: #E98074;
+  width: 95%;
+  text-align: center;
+}
