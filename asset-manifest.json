@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tamburinektor-frontend/static/css/main.47bed305.css",
+    "main.js": "/tamburinektor-frontend/static/js/main.a96fc50c.js",
+    "static/js/787.46953a22.chunk.js": "/tamburinektor-frontend/static/js/787.46953a22.chunk.js",
+    "static/media/graphUp.png": "/tamburinektor-frontend/static/media/graphUp.0be6f9b1c5764a68fb01.png",
+    "static/media/computer.png": "/tamburinektor-frontend/static/media/computer.4544e2c068f88b17b382.png",
+    "static/media/graphRight.png": "/tamburinektor-frontend/static/media/graphRight.e35a830661cac93af9e1.png",
+    "static/media/graphLeft.png": "/tamburinektor-frontend/static/media/graphLeft.05a85135b934ef565bc8.png",
+    "static/media/logo.png": "/tamburinektor-frontend/static/media/logo.6e53495b35e1dbf91896.png",
+    "index.html": "/tamburinektor-frontend/index.html",
+    "main.47bed305.css.map": "/tamburinektor-frontend/static/css/main.47bed305.css.map",
+    "main.a96fc50c.js.map": "/tamburinektor-frontend/static/js/main.a96fc50c.js.map",
+    "787.46953a22.chunk.js.map": "/tamburinektor-frontend/static/js/787.46953a22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47bed305.css",
+    "static/js/main.a96fc50c.js"
+  ]
+}
