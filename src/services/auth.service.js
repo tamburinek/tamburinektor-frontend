@@ -28,7 +28,7 @@ const logout = () => {
     localStorage.removeItem('username');
     localStorage.removeItem('role');
     localStorage.removeItem('token');
-    window.location = "/"
+    window.location = "/tamburinektor-frontend"
 }
 
 const register = (name, surname, username, password, userType) => {

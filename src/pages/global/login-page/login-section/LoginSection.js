@@ -1,8 +1,6 @@
 import styles from './LoginSection.module.scss'
 import {Link} from "react-router-dom";
-import {baseUrl} from "../../../../config/const";
 import AuthService from "../../../../services/auth.service";
-import authHeader from "../../../../services/auth-header";
 import {useEffect, useState} from "react";
 import logo from "../../../../assets/png/logo.png";
 
@@ -20,7 +18,7 @@ export const LoginSection = () => {
         }
         AuthService.login(username, password).then(
             (data) => {
-                window.location = "/dashboard"
+                window.location = "/tamburinektor-frontend/dashboard"
             }
         )
     }

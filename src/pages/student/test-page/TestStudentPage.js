@@ -124,7 +124,7 @@ export const TestStudentPage = () => {
             setAnswered(false)
           }} className={styles.answerButton}>Další</button>}
           {answered === false && <button onClick={() => setAnswered(true)} className={styles.answerButton}>Odpovědět</button>}
-          <button onClick={() => window.location = "/dashboard"} className={styles.exit}>Ukončit test</button>
+          <button onClick={() => window.location = "/tamburinektor-frontend/dashboard"} className={styles.exit}>Ukončit test</button>
         </div>
       </div>
   )

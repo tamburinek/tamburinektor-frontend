@@ -9,7 +9,7 @@ export const IndexPage = () => {
 
     useEffect(() => {
         if (localStorage.getItem("user")){
-            window.location = "/dashboard"
+            window.location = "/tamburinektor-frontend/dashboard"
         }
     })
 
