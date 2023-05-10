@@ -187,7 +187,7 @@ export const ClassRoomPage = () => {
     return(
         <div className={styles.main}>
             <div className={styles.test}>
-                <img onClick={() => window.location = "/tamburinektor-frontend/dashboard"} className={styles.logo} alt={"logo"} src={logo}/>
+                <img onClick={() => window.location = "/dashboard"} className={styles.logo} alt={"logo"} src={logo}/>
                 <div className={styles.classes}>
                     <p className={styles.className}>Vybrat třídu</p>
                     <div className={styles.classList}>

@@ -96,7 +96,7 @@ const valid = (e) => {
             AuthService.register(name, surname, username, password, type)
             .then(
                 () => {
-                        window.location = "/tamburinektor-frontend/login";
+                        window.location = "/login";
                     }
             );
         }

@@ -156,7 +156,7 @@ export const TestCreatePage = () => {
         let helper = testQuestions.map(item => item.id)
         if (params.get("id") !== null){
             TestApi.updateTest(params.get("id"), description, helper).then(() => {
-                window.location = "/tamburinektor-frontend/dashboard"
+                window.location = "/dashboard"
             })
         } else {
             TestApi.createTest(description, helper).then((res) => {

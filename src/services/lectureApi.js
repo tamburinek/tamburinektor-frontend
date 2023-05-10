@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {baseUrl} from "../config/const";
 import authHeader from "./auth-header";
+import {bool} from "prop-types";
 
 const headers = authHeader();
 
@@ -52,8 +53,40 @@ const getLast = () => {
     }));
 }
 
+const isActive = (id) => {
+    return (axios.get(`${baseUrl}/lecture/${id}/active`,{headers}).then(response => {
+        console.log(response)
+        return response
+    }));
+}
+
+const setActive = (id, active) => {
+    return (axios.post(`${baseUrl}/lecture/${id}`,{
+        active:active
+    },{headers}).then(response => {
+        console.log(response)
+        return response
+    }));
+}
+
+const setActiveItem = (id, active) => {
+    return (axios.post(`${baseUrl}/lecture/${id}/last`,{
+        id:active
+    },{headers}).then(response => {
+        console.log(response)
+        return response
+    }));
+}
+
+const getActiveItem = (id) => {
+    return (axios.get(`${baseUrl}/lecture/${id}/last`,{headers}).then(response => {
+        console.log(response)
+        return response
+    }));
+}
+
 
 const MaterialsApi = {
-    createLecture, getAllLectures, getLectureById, updateLecture, getLast
+    createLecture, getAllLectures, getLectureById, updateLecture, getLast, isActive, setActive, setActiveItem, getActiveItem
 };
 export default MaterialsApi;

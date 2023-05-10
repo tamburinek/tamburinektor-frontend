@@ -18,7 +18,7 @@ export const LoginSection = () => {
         }
         AuthService.login(username, password).then(
             (data) => {
-                window.location = "/tamburinektor-frontend/dashboard"
+                window.location = "/dashboard"
             }
         )
     }

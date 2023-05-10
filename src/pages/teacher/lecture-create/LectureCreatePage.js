@@ -209,7 +209,7 @@ export const LectureCreatePage = () => {
         }
         if (params.get("id") !== null){
             LectureApi.updateLecture(params.get("id"), lectureDescription, paperItems).then(() => {
-                window.location = "/tamburinektor-frontend/dashboard"
+                window.location = "/dashboard"
             })
         } else {
             LectureApi.createLecture(lectureDescription, paperItems).then((res) => {

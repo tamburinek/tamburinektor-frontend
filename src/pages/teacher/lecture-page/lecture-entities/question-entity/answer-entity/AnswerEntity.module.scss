@@ -1,0 +1,16 @@
+.main{
+  width: 60%;
+  height: 10%;
+  min-height: 10%;
+  background-color: rgb(233, 128, 116, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10%;
+  border-radius: 10px 30px 10px 30px;
+  margin-bottom: 2%;
+}
+
+.main span{
+  max-width: 50%;
+}

@@ -20,13 +20,18 @@ export const LectureTeacherPage = () => {
     const [lectureDescription, setLectureDescription] = useState("")
     const [lectureEntities, setLectureEntities] = useState([])
 
-    const [index, setIndex] = useState(0)
     const [currentEntity, setCurrentEntity] = useState({})
     const [fetched, setFetched] = useState(false)
     const [ready, setReady] = useState(false)
 
-    //todo set lecture as not active
-    useBeforeunload(() => console.log("ahoj"));
+    useBeforeunload(() =>{
+        LectureApi.setActive(params.get("id"), false).then(res => {
+            console.log(res)
+        })
+        LectureApi.setActiveItem(params.get("id"), 0).then((res) => {
+            console.log(res.data)
+        })
+    })
 
     let listItems = lectureEntities.filter(item => item).map(item => {
         return <LectureEntity key={item.id} id={item.id} current={currentEntity.id} onClick={() => setCurrentEntity(item)} type={item.lectureType}/>
@@ -38,6 +43,9 @@ export const LectureTeacherPage = () => {
             setLectureDescription(res.data.description)
             setLectureEntities(res.data.lectureEntities)
             setFetched(true)
+            LectureApi.setActive(params.get("id"), true).then(res => {
+                console.log(res)
+            })
         })
     },[])
 
@@ -54,11 +62,19 @@ export const LectureTeacherPage = () => {
         if (currentEntity === 0){
             return
         }
+        LectureApi.setActiveItem(params.get("id"), currentEntity.id).then((res) => {
+            console.log(res)
+        })
     },[currentEntity])
 
     return (
         <div className={styles.main}>
-            <Link to={'/dashboard'}><img className={styles.logo} src={logo} alt={'logo'}/> </Link>
+            <Link to={'/dashboard'} ><img onClick={() => LectureApi.setActive(params.get("id"), false).then(res => {
+                console.log(res)
+                LectureApi.setActiveItem(params.get("id"), 0).then((res) => {
+                    console.log(res.data)
+                })
+            })} className={styles.logo} src={logo} alt={'logo'}/> </Link>
             <div className={styles.sidebar}>
                 <span className={styles.span}>Plán lekce</span>
                 <div className={styles.allItems}>
