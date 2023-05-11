@@ -59,7 +59,7 @@ export const CreateQuestion = (props) => {
                 <button onClick={addImage} className={styles.image}>{text}</button>
                 {text === "Odstranit obrázek" && <input onChange={(e) => {
                     setImage(e.target.value)
-                }} value={imageLink} className={styles.input} placeholder={"Obrázek"} type={"text"}/>}
+                }} value={imageLink} className={styles.input} placeholder={"odkaz obrázku ve tvaru >> https://www.matweb.cz/pictures/linrov3.svg "} type={"text"}/>}
                 <div className={styles.modal}>
                     {type === "close" && <CloseQuestion id={props.id} right={right} wrong={wrong} onAdd={() => {
                         setQuestion("")

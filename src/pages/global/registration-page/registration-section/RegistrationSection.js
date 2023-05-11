@@ -68,7 +68,7 @@ const valid = (e) => {
             }
             if (username.trim().length >= 4) {
                 if (surname.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,20}$/)) {
-                    setError("Incorrect last name format.")
+                    setError("Incorrect username format.")
                     valid = false;
                     e.preventDefault();
                     return;
@@ -116,7 +116,7 @@ const valid = (e) => {
                         autoComplete="off"
                         id="username"
                         type={'text'}
-                        placeholder={'@Tamburinek'}
+                        placeholder={'4+ znaky bez speciílních znaků'}
                         value={username}
                         onChange={(e) => {
                             setUsername(e.target.value)
@@ -127,6 +127,7 @@ const valid = (e) => {
                     <div className={style.name}>
                         <label className={styles.label} htmlFor="name"> Jméno </label>
                         <input
+                            placeholder={"3+ znaky"}
                             autoComplete="off"
                             value={name}
                             onChange={(e) => {
@@ -140,6 +141,7 @@ const valid = (e) => {
                     <div className={style.surname}>
                         <label className={styles.label} htmlFor="surname"> Příjmení </label>
                         <input
+                            placeholder={"3+ znaky"}
                             autoComplete="off"
                             id="surname"
                             type={'text'}
@@ -161,6 +163,7 @@ const valid = (e) => {
                     onChange={(e) => {
                         setPassword(e.target.value)
                     }}
+                    placeholder={"alespoň 4 znaky"}
                     className={styles.input}/>
                 </div>
 

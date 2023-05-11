@@ -52,7 +52,7 @@ export const DefinitionForm = (props) => {
         <div className={styles.main}>
             <form className={styles.form}>
                 <label className={styles.descr}>Popis definice</label>
-                <input onChange={(e) => {
+                <input placeholder={"krátký popis který se bude zobrazovat při vyhledávání"} onChange={(e) => {
                     setDescription(e.target.value)}}
                        value={description}
                        className={styles.description} type={"text"}/>
@@ -64,7 +64,8 @@ export const DefinitionForm = (props) => {
                     className={styles.area} name="allDef" id="allDef" cols="30" rows="10"/>
                 <button onClick={addImage} className={styles.image}>{text}</button>
                 {text === "Odstranit obrázek" && <input onChange={(e) => {
-                    setImage(e.target.value)}} value={imageUrl} className={styles.inputImage}/>}
+                    setImage(e.target.value)}} placeholder={"odkaz obrázku ve tvaru >> https://www.matweb.cz/pictures/linrov3.svg"}
+                                                        value={imageUrl} className={styles.inputImage}/>}
                 <button onClick={confirm} className={styles.add}>{buttonText}</button>
             </form>
         </div>

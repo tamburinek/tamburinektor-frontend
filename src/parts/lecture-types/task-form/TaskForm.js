@@ -70,14 +70,14 @@ export const TaskForm = (props) => {
                     setQuestion(e.target.value)}}
                        value={question} className={styles.big}/>
                 <button onClick={addImage} className={styles.image}>{text}</button>
-                {text === "Odstranit obrázek" && <input onChange={(e) => {
+                {text === "Odstranit obrázek" && <input placeholder={"odkaz obrázku ve tvaru >> https://www.matweb.cz/pictures/linrov3.svg "} onChange={(e) => {
                     setQuestionImage(e.target.value)}} value={questionImage} className={styles.small} type={"text"}/>}
                 <label>Odpověď</label>
                 <textarea onChange={(e) => {
                     setAnswer(e.target.value)}}
                        value={answer} className={styles.big} />
                 <button onClick={addImage2} className={styles.image}>{text2}</button>
-                {text2 === "Odstranit obrázek" && <input onChange={(e) => {
+                {text2 === "Odstranit obrázek" && <input placeholder={"odkaz obrázku ve tvaru >> https://www.matweb.cz/pictures/linrov3.svg "} onChange={(e) => {
                     setAnswerImage(e.target.value)}} value={answerImage} className={styles.small} type={"text"}/>}
                 <button onClick={confirm} className={styles.add}>{buttonText}</button>
             </form>

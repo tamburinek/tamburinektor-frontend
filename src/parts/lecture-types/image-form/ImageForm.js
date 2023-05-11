@@ -42,7 +42,7 @@ export const ImageForm = (props) => {
                     setDescription(e.target.value)}}
                        value={description} className={styles.description} type={"text"}/>
                 <label className={styles.label}>Odkaz</label>
-                <input value={imageUrl} onChange={(e) => {
+                <input placeholder={"odkaz obrázku ve tvaru >> https://www.matweb.cz/pictures/linrov3.svg"} value={imageUrl} onChange={(e) => {
                     setImage(e.target.value)}} className={styles.link} type={"text"}/>
                 <button onClick={confirm} className={styles.add}>{buttonText}</button>
             </form>
